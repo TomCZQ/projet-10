@@ -2,12 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
     token: "",
-    user: {email:"",
-            password:"",
-            fistName: "",
-            lastName: "",
-            userName: "",
-        },
+    user: null,
     error: null,
     loading: false
 }

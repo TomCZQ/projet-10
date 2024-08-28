@@ -2,11 +2,11 @@ import React from "react";
 import "./Style/Button.scss"
 
 
-const Button = (props) => {
+const Button = ({name, onClick}) => {
     return (
         <div>
-            <button className="sign-in-button">
-                {props.name}
+            <button className="sign-in-button" onClick={onClick}>
+                {name}
             </button>
         </div>
     );

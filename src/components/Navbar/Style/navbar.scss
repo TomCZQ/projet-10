@@ -1,7 +1,17 @@
 .navbar-container{
   display: flex;
   flex-direction: row;
-  
+
+  .main-nav-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+
+    p{
+      font-weight: 600;
+    }
+  }
 }
 
 p {

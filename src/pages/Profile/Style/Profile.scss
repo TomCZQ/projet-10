@@ -7,4 +7,36 @@
     align-items: center;
     color: #fff;
     margin-bottom: 2rem;
+
+    .header-button{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    form{
+      margin-top: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+
+      .input-label{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 10px;
+        input{
+          height:25px;
+          width: 150px;
+        }
+      }
+      .buttons{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+      }
+    }
   }
+
