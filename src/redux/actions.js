@@ -47,8 +47,7 @@ export const getProfile = async (token, dispatch) => {
   }
 };
 
-export const updateUser = async (token, body, dispatch) => {
-  console.log("ok");
+export const updateUser = async (token, body, onCloseForm, dispatch) => {
   dispatch(updateRequest());
 
   try {
@@ -61,6 +60,7 @@ export const updateUser = async (token, body, dispatch) => {
         },
       }
     );
+    onCloseForm();
     dispatch(updateSuccess(response.data));
     getProfile(token, dispatch);
   } catch (error) {

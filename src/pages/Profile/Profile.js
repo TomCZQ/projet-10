@@ -31,7 +31,8 @@ const Profile = () => {
   const onUpdateUser = (e) => {
     e.preventDefault();
     const body = { userName };
-    updateUser(token, body, dispatch);
+    const closeForm = () => setToggleForm(false);
+    updateUser(token, body, closeForm, dispatch);
   };
 
   return (
@@ -59,7 +60,7 @@ const Profile = () => {
                 id="username"
                 placeholder={userName}
                 onChange={(e) => setUserName(e.target.value)}
-                required
+                //required
               />
             </div>
 
